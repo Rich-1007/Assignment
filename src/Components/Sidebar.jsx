@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { PiShareNetworkLight } from "react-icons/pi";
+import { GrView } from "react-icons/gr";
+
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
@@ -13,8 +17,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           onClick={() => setIsSidebarOpen((prev) => !prev)}
           style={{
             display: "inline-flex",
-            border: "1px solid red",
-            padding: "8px",
+            border:"0",
+            
+            padding: "10px",
             borderRadius: "50%",
           }}
         >
@@ -23,7 +28,8 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
       </div>
 
       <h1 className="heading-1">
-        MAITREYA BUDDHA IIN GESTURE OF FEARLESSNESS(ABHAYA MUDRA)
+        MAITREYA BUDDHA IIN GESTURE OF FEARLESSNESS
+        (ABHAYA MUDRA)
       </h1>
       <div className="actions">
         <div className="action-icons">
@@ -34,13 +40,13 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </div>
         <div className="action-icons">
           <div className="icon">
-            <CiHeart size={24} />
+            <PiShareNetworkLight size={24} />
           </div>
           <span>120</span>
         </div>
         <div className="action-icons">
           <div className="icon">
-            <CiHeart size={24} />
+            <GrView  size={24} />
           </div>
           <span>27</span>
         </div>
