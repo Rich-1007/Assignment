@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import img3 from "../assets/img3.png";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+
+import { FiChevronsLeft } from "react-icons/fi";
+import MobileSidebar from "./MobileSidebar";
 const Main = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   return (
@@ -13,20 +15,24 @@ const Main = () => {
           setIsSidebarOpen={setIsSidebarOpen}
         />
 
+        <MobileSidebar
+          isSidebarOpen={isSidebarOpen}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+
         {/* bg */}
         <div className="main-content">
           <button
             onClick={() => setIsSidebarOpen((prev) => !prev)}
             style={{
               display: "inline-flex",
-              background:"white",
+              background: "white",
               border: "2px solid chocolate ",
-              padding: "8px",
-              margin:"4px",
-              borderRadius: "50%",
+              padding: "2px 4px",
+              marginTop: "18px",
             }}
           >
-            <MdKeyboardArrowLeft />
+            <FiChevronsLeft size={16} />
           </button>
 
           <div className="image-container">

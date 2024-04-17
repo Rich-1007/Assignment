@@ -5,6 +5,7 @@ import { GrView } from "react-icons/gr";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Description from "./Description";
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
@@ -68,20 +69,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
       <div className="description">
         <p className="desc-head">Description :</p>
 
-        <p className="desc-text">
-          Maitreya, the future Buddha to be, resides in the Tushita heaven as a
-          bodhisattva waiting to redeem humanity. In Buddhism, Maitreya is the
-          eighth Buddha, a successor of the seven historical Buddhas
-          (sapta-manushi Buddhas). The Digha Nikaya mentions, Maitreya Buddha
-          will be born in Ketumati. in present-day Varanasi, Uttar Pradesh. As a
-          bodhisattva, Maitreya wears a heavily adorned with earrings,
-          wristlets, necklaces, and an amulet. The
-        </p>
+        <Description />
 
-        <button className="read-btn">
-          <FaArrowRightLong />
-          READ MORE
-        </button>
+      
 
         <div className="sidebar-footer-btns">
           <button className="btn add-btn">ADD TO COLLECTION</button>
